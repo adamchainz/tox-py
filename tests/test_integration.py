@@ -35,7 +35,7 @@ def test_current(capfd, tmp_path):
         skipsdist = true
         skip_install = true
         envlist =
-            py{36,37,38,39}
+            py{36,37,38,39,310}
 
         [testenv]
         commands = python --version
@@ -46,5 +46,5 @@ def test_current(capfd, tmp_path):
     return_code, out, err = run_tox(capfd, tmp_path, ["--py", "current"])
 
     assert return_code == 0
-    version = ".".join(str(x) for x in sys.version_info[:3])
+    version = sys.version.split(" ")[0]
     assert f"Python {version}" in out.splitlines()
