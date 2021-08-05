@@ -1,12 +1,13 @@
 import argparse
 import os
 import sys
+from typing import Any
 
 import tox
 from tox.config.parallel import ENV_VAR_KEY_PUBLIC as TOX_PARALLEL_ENV
 
 
-def parse_py(string):
+def parse_py(string: str) -> str:
     if string == "current":
         return string
     if string.isdigit():
@@ -17,7 +18,7 @@ def parse_py(string):
 
 
 @tox.hookimpl
-def tox_addoption(parser):
+def tox_addoption(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--py",
         type=parse_py,
@@ -26,7 +27,7 @@ def tox_addoption(parser):
 
 
 @tox.hookimpl
-def tox_configure(config):
+def tox_configure(config: Any) -> None:
     # Run on the main tox process but not in the parallelized subprocesses,
     # where the subprocess has been delegated a specific TOX_PARALLEL_ENV.
     if TOX_PARALLEL_ENV in os.environ:
