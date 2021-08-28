@@ -76,9 +76,9 @@ filelock==3.0.12 \
     # via
     #   tox
     #   virtualenv
-importlib-metadata==4.6.4 \
-    --hash=sha256:7b30a78db2922d78a6f47fb30683156a14f3c6aa5cc23f77cc8967e9ab2d002f \
-    --hash=sha256:ed5157fef23a4bc4594615a0dd8eba94b2bb36bf2a343fa3d8bb2fa0a62a99d5
+importlib-metadata==4.7.1 \
+    --hash=sha256:9e04bf59076a15a9b6dd9c27806e8fcdf15280ba529c6a8cc3f4d5b4875bdd61 \
+    --hash=sha256:c4eb3dec5f697682e383a39701a7de11cd5c02daf8dd93534b69e3e6473f6b1b
     # via pytest-randomly
 iniconfig==1.1.1 \
     --hash=sha256:011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3 \
@@ -132,9 +132,9 @@ toml==0.10.2 \
     # via
     #   pytest
     #   tox
-tox==3.24.1 \
-    --hash=sha256:60eda26fa47b7130e6fc1145620b1fd897963af521093c3685c3f63d1c394029 \
-    --hash=sha256:9850daeb96d21b4abf049bc5f197426123039e383ebfed201764e9355fc5a880
+tox==3.24.3 \
+    --hash=sha256:9fbf8e2ab758b2a5e7cb2c72945e4728089934853076f67ef18d7575c8ab6b88 \
+    --hash=sha256:c6c4e77705ada004283610fd6d9ba4f77bc85d235447f875df9f0ba1bc23b634
     # via -r requirements.in
 virtualenv==20.7.2 \
     --hash=sha256:9ef4e8ee4710826e98ff3075c9a4739e2cb1040de6a2a8d35db0055840dc96a0 \
