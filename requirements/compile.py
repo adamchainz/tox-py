@@ -10,22 +10,42 @@ if __name__ == "__main__":
     os.environ.pop("PIP_REQUIRE_VIRTUALENV")
     common_args = ["-m", "piptools", "compile", "--generate-hashes"] + sys.argv[1:]
     subprocess.run(
-        ["python3.6", *common_args, "-o", "py36.txt"],
+        ["python3.6", *common_args, "-P", "tox<4", "-o", "py36-tox3.txt"],
         check=True,
     )
     subprocess.run(
-        ["python3.7", *common_args, "-o", "py37.txt"],
+        ["python3.7", *common_args, "-P", "tox<4", "-o", "py37-tox3.txt"],
         check=True,
     )
     subprocess.run(
-        ["python3.8", *common_args, "-o", "py38.txt"],
+        ["python3.8", *common_args, "-P", "tox<4", "-o", "py38-tox3.txt"],
         check=True,
     )
     subprocess.run(
-        ["python3.9", *common_args, "-o", "py39.txt"],
+        ["python3.9", *common_args, "-P", "tox<4", "-o", "py39-tox3.txt"],
         check=True,
     )
     subprocess.run(
-        ["python3.10", *common_args, "-o", "py310.txt"],
+        ["python3.10", *common_args, "-P", "tox<4", "-o", "py310-tox3.txt"],
+        check=True,
+    )
+    subprocess.run(
+        ["python3.6", *common_args, "-P", "tox>=4.0.0a8", "-o", "py36-tox4.txt"],
+        check=True,
+    )
+    subprocess.run(
+        ["python3.7", *common_args, "-P", "tox>=4.0.0a8", "-o", "py37-tox4.txt"],
+        check=True,
+    )
+    subprocess.run(
+        ["python3.8", *common_args, "-P", "tox>=4.0.0a8", "-o", "py38-tox4.txt"],
+        check=True,
+    )
+    subprocess.run(
+        ["python3.9", *common_args, "-P", "tox>=4.0.0a8", "-o", "py39-tox4.txt"],
+        check=True,
+    )
+    subprocess.run(
+        ["python3.10", *common_args, "-P", "tox>=4.0.0a8", "-o", "py310-tox4.txt"],
         check=True,
     )
