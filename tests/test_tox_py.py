@@ -45,7 +45,7 @@ class TestToxConfigure:
         assert result is None
 
     def test_py_not_set(self):
-        config = SimpleNamespace(option=SimpleNamespace(env=None, py=None))
+        config = SimpleNamespace(option=SimpleNamespace(env=None, py=""))
 
         result = tox_configure(config)
 
