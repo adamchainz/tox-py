@@ -4,9 +4,8 @@ from types import SimpleNamespace
 from unittest import mock
 
 import pytest
-from tox.config.parallel import ENV_VAR_KEY_PUBLIC as TOX_PARALLEL_ENV
 
-from tox_py import parse_py, tox_configure
+from tox_py import TOX_PARALLEL_ENV, parse_py, tox_configure
 
 
 class TestParsePy:

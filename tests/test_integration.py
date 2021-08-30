@@ -16,10 +16,16 @@ def chdir(path):
         os.chdir(original)
 
 
+if tox.__version__.startswith("4."):
+    from tox.run import run as tox_run
+else:
+    from tox import cmdline as tox_run
+
+
 def run_tox(capfd, path, args):
     try:
         with chdir(path):
-            tox.cmdline(["tox"] + args)
+            tox_run(["tox"] + args)
     except SystemExit as exc:
         code = exc.code
 
