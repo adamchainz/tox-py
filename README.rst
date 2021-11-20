@@ -5,8 +5,8 @@ tox-py
 .. image:: https://img.shields.io/github/workflow/status/adamchainz/tox-py/CI/main?style=for-the-badge
    :target: https://github.com/adamchainz/tox-py/actions?workflow=CI
 
-.. image:: https://img.shields.io/codecov/c/github/adamchainz/tox-py/main?style=for-the-badge
-  :target: https://app.codecov.io/gh/adamchainz/tox-py
+.. image:: https://img.shields.io/badge/Coverage-100%25-success?style=for-the-badge
+   :target: https://github.com/adamchainz/tox-py/actions?workflow=CI
 
 .. image:: https://img.shields.io/pypi/v/tox-py.svg?style=for-the-badge
    :target: https://pypi.org/project/tox-py/
