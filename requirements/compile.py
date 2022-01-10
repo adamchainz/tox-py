@@ -16,22 +16,22 @@ if __name__ == "__main__":
         "--allow-unsafe",
     ] + sys.argv[1:]
     subprocess.run(
-        ["python3.7", *common_args, "-P", "tox>=4.0.0a8", "-o", "py37-tox4.txt"],
+        ["python3.7", *common_args, "-o", "py37.txt"],
         check=True,
         capture_output=True,
     )
     subprocess.run(
-        ["python3.8", *common_args, "-P", "tox>=4.0.0a8", "-o", "py38-tox4.txt"],
+        ["python3.8", *common_args, "-o", "py38.txt"],
         check=True,
         capture_output=True,
     )
     subprocess.run(
-        ["python3.9", *common_args, "-P", "tox>=4.0.0a8", "-o", "py39-tox4.txt"],
+        ["python3.9", *common_args, "-o", "py39.txt"],
         check=True,
         capture_output=True,
     )
     subprocess.run(
-        ["python3.10", *common_args, "-P", "tox>=4.0.0a8", "-o", "py310-tox4.txt"],
+        ["python3.10", *common_args, "-o", "py310.txt"],
         check=True,
         capture_output=True,
     )

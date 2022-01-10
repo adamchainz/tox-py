@@ -1,4 +1,4 @@
 coverage
 pytest
 pytest-randomly
-tox
+tox<4
