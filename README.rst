@@ -33,6 +33,10 @@ Use **pip**:
 
 Python 3.7 to 3.10 supported.
 
+Only tox 3 is supported.
+On tox 4, ensure only your target Python version is installed, and run ``tox --skip-missing-interpreters``.
+(`See discussion <https://github.com/adamchainz/tox-py/issues/34#issuecomment-908456003>`__.)
+
 ----
 
 **Testing a Django project?**
