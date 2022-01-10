@@ -18,7 +18,7 @@ def chdir(path):
 
 def run_tox(capfd, path, args):
     try:
-        with chdir(path):
+        with chdir(path):  # pragma: no branch
             tox.cmdline(["tox"] + args)
     except SystemExit as exc:
         code = exc.code
