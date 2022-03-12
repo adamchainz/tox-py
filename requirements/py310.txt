@@ -119,7 +119,7 @@ tox==3.24.5 \
     --hash=sha256:67e0e32c90e278251fea45b696d0fef3879089ccbe979b0c556d35d5a70e2993 \
     --hash=sha256:be3362472a33094bce26727f5f771ca0facf6dafa217f65875314e9a6600c95c
     # via -r requirements.in
-virtualenv==20.13.2 \
-    --hash=sha256:01f5f80744d24a3743ce61858123488e91cb2dd1d3bdf92adaf1bba39ffdedf0 \
-    --hash=sha256:e7b34c9474e6476ee208c43a4d9ac1510b041c68347eabfe9a9ea0c86aa0a46b
+virtualenv==20.13.3 \
+    --hash=sha256:dd448d1ded9f14d1a4bfa6bfc0c5b96ae3be3f2d6c6c159b23ddcfd701baa021 \
+    --hash=sha256:e9dd1a1359d70137559034c0f5433b34caf504af2dc756367be86a5a32967134
     # via tox
