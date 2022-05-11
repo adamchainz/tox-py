@@ -30,14 +30,14 @@ def run_tox(capfd, path, args):
 
 
 def test_current(capfd, tmp_path):
+    tox_name = f"py{sys.version_info[0]}{sys.version_info[1]}"
     (tmp_path / "tox.ini").write_text(
         dedent(
-            """
+            f"""
         [tox]
         skipsdist = true
         skip_install = true
-        envlist =
-            py{36,37,38,39,310}
+        envlist = {tox_name}
 
         [testenv]
         commands = python --version

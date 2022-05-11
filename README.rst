@@ -31,7 +31,7 @@ Use **pip**:
 
     python -m pip install tox-py
 
-Python 3.7 to 3.10 supported.
+Python 3.7 to 3.11 supported.
 
 Only tox 3 is supported.
 On tox 4, ensure only your target Python version is installed, and run ``tox --skip-missing-interpreters``.
