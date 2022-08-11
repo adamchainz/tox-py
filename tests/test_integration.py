@@ -3,9 +3,11 @@ from __future__ import annotations
 import os
 import sys
 from contextlib import contextmanager
+from pathlib import Path
 from textwrap import dedent
 
 import tox
+from _pytest.capture import CaptureFixture
 
 
 @contextmanager
@@ -18,7 +20,9 @@ def chdir(path):
         os.chdir(original)
 
 
-def run_tox(capfd, path, args):
+def run_tox(
+    capfd: CaptureFixture[str], path: Path, args: list[str]
+) -> tuple[int, str, str]:
     try:
         with chdir(path):  # pragma: no branch
             tox.cmdline(["tox"] + args)

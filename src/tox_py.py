@@ -19,7 +19,7 @@ def parse_py(string: str) -> str:
     )
 
 
-@tox.hookimpl
+@tox.hookimpl  # type: ignore [misc]
 def tox_addoption(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--py",
@@ -28,7 +28,7 @@ def tox_addoption(parser: argparse.ArgumentParser) -> None:
     )
 
 
-@tox.hookimpl
+@tox.hookimpl  # type: ignore [misc]
 def tox_configure(config: Any) -> None:
     # Run on the main tox process but not in the parallelized subprocesses,
     # where the subprocess has been delegated a specific TOX_PARALLEL_ENV.
