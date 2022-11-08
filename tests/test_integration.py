@@ -22,7 +22,7 @@ def chdir(path):
 
 def run_tox(
     capfd: CaptureFixture[str], path: Path, args: list[str]
-) -> tuple[int, str, str]:
+) -> tuple[int | str | None, str, str]:
     try:
         with chdir(path):  # pragma: no branch
             tox.cmdline(["tox"] + args)
