@@ -64,9 +64,9 @@ distlib==0.3.6 \
     --hash=sha256:14bad2d9b04d3a36127ac97f30b12a19268f211063d8f8ee4f47108896e11b46 \
     --hash=sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e
     # via virtualenv
-exceptiongroup==1.0.1 \
-    --hash=sha256:4d6c0aa6dd825810941c792f53d7b8d71da26f5e5f84f20f9508e8f2d33b140a \
-    --hash=sha256:73866f7f842ede6cb1daa42c4af078e2035e5f7607f0e2c762cc51bb31bbe7b2
+exceptiongroup==1.0.4 \
+    --hash=sha256:542adf9dea4055530d6e1279602fa5cb11dab2395fa650b8674eaec35fc4a828 \
+    --hash=sha256:bd14967b79cd9bdb54d97323216f8fdf533e278df937aa2a90089e7d6e06e5ec
     # via pytest
 filelock==3.8.0 \
     --hash=sha256:55447caa666f2198c5b6b13a26d2084d26fa5b115c00d065664b2124680c4edc \
@@ -88,9 +88,9 @@ packaging==21.3 \
     # via
     #   pytest
     #   tox
-platformdirs==2.5.2 \
-    --hash=sha256:027d8e83a2d7de06bbac4e5ef7e023c02b863d7ea5d079477e722bb41ab25788 \
-    --hash=sha256:58c8abb07dcb441e6ee4b11d8df0ac856038f944ab98b7be6b27b2a3c7feef19
+platformdirs==2.5.4 \
+    --hash=sha256:1006647646d80f16130f052404c6b901e80ee4ed6bef6792e1f238a8969106f7 \
+    --hash=sha256:af0276409f9a02373d540bf8480021a048711d572745aef4b7842dad245eba10
     # via virtualenv
 pluggy==1.0.0 \
     --hash=sha256:4224373bacce55f955a878bf9cfa763c1e360858e330072059e10bad68531159 \
@@ -126,13 +126,13 @@ tomli==2.0.1 \
     # via
     #   pytest
     #   tox
-tox==3.27.0 \
-    --hash=sha256:89e4bc6df3854e9fc5582462e328dd3660d7d865ba625ae5881bbc63836a6324 \
-    --hash=sha256:d2c945f02a03d4501374a3d5430877380deb69b218b1df9b7f1d2f2a10befaf9
+tox==3.27.1 \
+    --hash=sha256:b2a920e35a668cc06942ffd1cf3a4fb221a4d909ca72191fb6d84b0b18a7be04 \
+    --hash=sha256:f52ca66eae115fcfef0e77ef81fd107133d295c97c52df337adedb8dfac6ab84
     # via -r requirements.in
-virtualenv==20.16.6 \
-    --hash=sha256:186ca84254abcbde98180fd17092f9628c5fe742273c02724972a1d8a2035108 \
-    --hash=sha256:530b850b523c6449406dfba859d6345e48ef19b8439606c5d74d7d3c9e14d76e
+virtualenv==20.16.7 \
+    --hash=sha256:8691e3ff9387f743e00f6bb20f70121f5e4f596cae754531f2b3b3a1b1ac696e \
+    --hash=sha256:efd66b00386fdb7dbe4822d172303f40cd05e50e01740b19ea42425cbe653e29
     # via tox
 zipp==3.10.0 \
     --hash=sha256:4fcb6f278987a6605757302a6e40e896257570d11c51628968ccb2a47e80c6c1 \
