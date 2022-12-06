@@ -34,8 +34,38 @@ Use **pip**:
 Python 3.7 to 3.11 supported.
 
 Only tox 3 is supported.
-On tox 4, ensure only your target Python version is installed, and run ``tox --skip-missing-interpreters``.
-(`See discussion <https://github.com/adamchainz/tox-py/issues/34#issuecomment-908456003>`__.)
+
+On tox 4, you can use the new |-f factor option| to select environments by Python version:
+
+.. |-f factor option| replace:: ``-f`` factor option
+__ https://tox.wiki/en/latest/cli_interface.html#tox-run-select-target-environment(s)
+
+.. code-block:: console
+
+    $ tox -f py310
+
+On GitHub Actions, you can use ``-f`` with your matrix python version like so:
+
+.. code-block:: yaml
+
+    jobs:
+      tests:
+        name: Python ${{ matrix.python-version }}
+
+        strategy:
+          matrix:
+            python-version:
+            - 3.7
+            - 3.8
+            - 3.9
+            - '3.10'
+            - '3.11'
+
+        steps:
+        - ...
+
+        - name: Run tox targets for ${{ matrix.python-version }}
+          run: tox run -f py$(echo ${{ matrix.python-version }} | tr -d .)
 
 ----
 
