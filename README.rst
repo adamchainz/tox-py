@@ -41,7 +41,7 @@ Python 3.7 to 3.11 supported.
 
 Only tox 3 is supported.
 
-On tox 4, you can use the new |-f factor option| to select environments by Python version:
+On tox 4, you can use the new |-f factor option|__ to select environments by Python version:
 
 .. |-f factor option| replace:: ``-f`` factor option
 __ https://tox.wiki/en/latest/cli_interface.html#tox-run-select-target-environment(s)
