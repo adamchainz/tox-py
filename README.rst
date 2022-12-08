@@ -18,7 +18,13 @@ tox-py
    :target: https://github.com/pre-commit/pre-commit
    :alt: pre-commit
 
-..
+Unmaintained (2022-12-08)
+-------------------------
+
+With the release of tox 4, this package is no longer necessary, and so is not being maintained.
+You can instead use tox 4’s ``-f`` option - see below.
+
+----
 
 Adds the ``--py`` flag to tox to run environments matching a given Python interpreter.
 

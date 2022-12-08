@@ -2,6 +2,9 @@
 History
 =======
 
+* Mark as unmaintained.
+  This package doesn’t support tox 4, and the new ``-f`` flag is a good replacement - see the README.
+
 1.3.0 (2022-05-11)
 ------------------
 
